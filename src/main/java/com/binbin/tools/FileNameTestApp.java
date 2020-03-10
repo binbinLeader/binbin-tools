@@ -12,5 +12,14 @@ public class FileNameTestApp {
 
         String yearMonth = "20190101";
         System.out.println(yearMonth.substring(0, 6));
+
+        String fileStr = "D:/jiaobin/working/code/svn/Tasks/tags/USC_TASK_PAXT/etc/are.xml";
+//        String filePath = fileStr.substring(fileStr.lastIndexOf("/") + 1);
+        String filePath = fileStr.substring(0, fileStr.lastIndexOf("/") + 1);
+        System.out.println(filePath);
+
+        String pathStr = "/mnt/data_rd/user-data/xxyp/A088-XXYP/ZX12CW/receive/40/bak/202002/20200224/";
+        String dateStr = pathStr.substring(pathStr.lastIndexOf("/") - 8, pathStr.lastIndexOf("/"));
+        System.out.println(dateStr);
     }
 }
