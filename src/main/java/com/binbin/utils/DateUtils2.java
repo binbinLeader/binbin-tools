@@ -361,6 +361,10 @@ public class DateUtils2 {
 		return getRelativeDate(getToday(), 0, 0, -1);
 	}
 
+    public static String getTheDayBeforeYesterday() throws ParseException {
+        return getRelativeDate(getToday(), 0, 0, -2);
+    }
+
 	public static String getRelativeDate1(String sDate, int iYear, int iMonth, int iDate, String sFormat)
 			throws ParseException {
 		if (sDate == null)
